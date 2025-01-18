@@ -43,14 +43,14 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-                imageCaptureFromCamera()
+                ImageCaptureFromCamera()
         }
     }
 }
 
 
 @Composable
-fun imageCaptureFromCamera()
+fun ImageCaptureFromCamera()
 {
 
     val context = LocalContext.current
@@ -112,7 +112,7 @@ fun imageCaptureFromCamera()
     }
 
 
-    if (capturedImageUri.path?.isNotEmpty() == true)
+    if (capturedImageUri.path?.isNotEmpty() == true) 
     {
         Image(
             modifier = Modifier
